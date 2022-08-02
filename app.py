@@ -33,13 +33,6 @@ def index():
             return result_dict
 
 
-@app.route("/1")
-def h():
-    a = "1"
-    a = a - 2
-
-    return render_template("index.html")
-
 @app.errorhandler(Exception)
 def page_not_found(error):
     return render_template("error.html",data=error)
