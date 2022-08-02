@@ -35,6 +35,11 @@ def index():
 
 @app.errorhandler(Exception)
 def page_not_found(error):
+    """
+    error handle function
+    :param error:
+    :return:
+    """
     return render_template("error.html",data=error)
 
 
